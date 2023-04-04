@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class LoginPageComponent {
 
+  register: boolean = false;
+
+  showRegisterForm() {
+    this.register = true;
+  }
+
+  showLoginForm() {
+    this.register = false;
+  }
+
 }

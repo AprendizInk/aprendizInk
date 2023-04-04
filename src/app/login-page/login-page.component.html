@@ -7,38 +7,79 @@
           alt="Logo Aprendiz Ink"
           class="login_brand-logo"
         />
-        <h2 class="login_form_text">
-          Aprendiz INK está creado para dominar el arte del tatuaje.
-        </h2>
-        <div class="login_form_group">
-          <form action="">
-            <input
-              type="text"
-              class="login_form_control"
-              placeholder="Usuario o Correo electrónico"
-            />
-            <input
-              type="password"
-              class="login_form_control"
-              placeholder="Contraseña"
-            />
-            <button type="submit" class="login_form_submit">
-              Iniciar Sesión
-            </button>
-          </form>
-          <a href="" class="login_form_remember-password">
-            ¿Olvidaste tu contraseña?
-          </a>
+        <div *ngIf="register; else login">
+          <div class="register_form_group">
+            <form action="">
+              <input
+                type="text"
+                class="login_form_control"
+                placeholder="Nombre completo"
+              />
+              <input
+                type="email"
+                class="login_form_control"
+                placeholder="Correo electrónico"
+              />
+              <input
+                type="password"
+                class="login_form_control"
+                placeholder="Contraseña"
+              />
+              <input
+                type="password"
+                class="login_form_control"
+                placeholder="Confirmar Contraseña"
+              />
+              <button type="submit" class="login_form_submit">
+                Registrar cuenta
+              </button>
+            </form>
+          </div>
         </div>
+        <ng-template #login>
+          <h2 class="login_form_text">
+            Aprendiz INK está creado para dominar el arte del tatuaje.
+          </h2>
+          <div class="login_form_group">
+            <form action="">
+              <input
+                type="email"
+                class="login_form_control"
+                placeholder="Correo electrónico"
+              />
+              <input
+                type="password"
+                class="login_form_control"
+                placeholder="Contraseña"
+              />
+              <button type="submit" class="login_form_submit">
+                Iniciar Sesión
+              </button>
+            </form>
+            <a href="" class="login_form_remember-password">
+              ¿Olvidaste tu contraseña?
+            </a>
+          </div>
+        </ng-template>
         <span class="login_separator">o</span>
-        <span class="login_register_text">¿No tienes una cuenta?</span>
-        <button class="login_register_link">
-          <span>Crear cuenta nueva</span>
-        </button>
+        <div *ngIf="register; else loginbutton">
+            <div class="login_button-container">
+                <span class="login_login_text" >¿Ya tienes una cuenta?</span>
+                <button class="login_login_link" (click)="showLoginForm()">
+                  <span>Iniciar Sesión</span>
+                </button>
+            </div>
+        </div>
+        <ng-template #loginbutton>
+          <span class="login_register_text">¿No tienes una cuenta?</span>
+          <button class="login_register_link" (click)="showRegisterForm()">
+            <span>Crear cuenta nueva</span>
+          </button>
+        </ng-template>
       </div>
     </div>
     <div class="col-8">
-        <img src="assets/img/aprendizimagen.jpg" alt="" class="login_image">
+      <img src="assets/img/aprendizimagen.jpg" alt="" class="login_image" />
     </div>
   </div>
 </div>
