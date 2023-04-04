@@ -1,0 +1,136 @@
+@import 'variables';
+
+.login-page {
+    background-color: $background;
+    height: 100%;
+    padding: 50px 60px;
+}
+
+.login_form-container {
+    width: 100%;
+    height: 580px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11px 50px;
+    border: $border-white-rounded;
+    border-radius: $rounded;
+}
+
+.login_brand-logo {
+    width: 60%;
+    height: 150px;
+}
+
+.login_form_text {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    color: $text-white;
+}
+
+.login_form_group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 25px;
+
+    form {
+        text-align: center;
+    }
+}
+
+.login_form_control {
+    width: 80%;
+    margin: 12px auto;
+    padding: 2px 10px;
+    outline: none;
+    background-color: $background-gray-1;
+    border: $border-gray-rounded;
+    border-radius: $rounded;
+    font-size: 14px;
+    color: $text-gray-3;
+    text-align: center;
+}
+
+.login_form_submit {
+    width: 60%;
+    margin: 12px auto;
+    padding: 4px;
+    box-sizing: border-box;
+    color: $text-black;
+    font-family: "B612", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    background-color: $background-gray-3;
+    border: $border-dark-rounded;
+    border-radius: $rounded;
+}
+
+.login_form_remember-password {
+    display: block;
+    color: $text-gray-3;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.login_separator {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    color: $text-gray-3;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 34%;
+        border-bottom: 1px solid $border-gray-3;
+        margin-right: 40px;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 34%;
+        border-bottom: 1px solid $border-gray-3;
+        margin-left: 40px;
+    }
+}
+
+.login_register_text {
+    margin-top: 10px;
+    color: $text-gray-3;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.login_register_link {
+    width: 60%;
+    margin: 12px auto;
+    padding: 4px;
+    box-sizing: border-box;
+    color: $text-black;
+    font-family: "B612", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    background-color: $background-gray-3;
+    border: $border-dark-rounded;
+    border-radius: $rounded;
+
+    span {
+        position: relative;
+        margin-left: -18px;
+        
+
+        &::after {
+            content: url('../../assets/img/signing.png');
+            position: absolute;
+        }
+    }
+}
