@@ -1,0 +1,50 @@
+@import "variables";
+
+.content_navbar {
+  width: 100%;
+  height: 18vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $background;
+  box-sizing: border-box;
+}
+
+.content_navbar_logo {
+  height: 100%;
+}
+
+.content_navbar_options {
+  width: 70%;
+  height: 100%;
+  padding: 2vh 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_navbar_options_item {
+    width: 25%;
+    padding: 4px;
+    font-size: 1rem;
+    font-style: italic;
+    border-left: $border-white-rounded;
+    color: $text-white;
+    text-align: center;
+}
+
+.no-border {
+    border: none;
+}
+
+.content_navbar_search {
+    height: 35%;
+    padding: 0 6px;
+    align-self: center;
+    background-color: $background-gray-1;
+    outline: none;
+    border: $border-gray-rounded;
+    border-radius: $rounded;
+    font-size: 14px;
+
+}

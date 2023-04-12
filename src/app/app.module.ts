@@ -8,6 +8,8 @@ import { BodyComponent } from './body/body.component';
 import { LoginPageComponent } from './main-page/login-page/login-page.component';
 import { LoginFormComponent } from './main-page/login-form/login-form.component';
 import { RegisterFormComponent } from './main-page/register-form/register-form.component';
+import { ContentLayoutComponent } from './content-page/content-layout/content-layout.component';
+import { NavbarComponent } from './content-page/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { RegisterFormComponent } from './main-page/register-form/register-form.c
     BodyComponent,
     LoginPageComponent,
     LoginFormComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    ContentLayoutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
