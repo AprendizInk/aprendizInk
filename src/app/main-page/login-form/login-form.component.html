@@ -1,12 +1,16 @@
 <div class="login_form_group">
-  <form action="">
+  <form (ngSubmit)="onSubmit()">
     <input
+      [(ngModel)]='email'
       type="email"
+      name="email"
       class="login_form_control"
       placeholder="Correo electrónico"
     />
     <input
+      [(ngModel)]='password'
       type="password"
+      name="password"
       class="login_form_control"
       placeholder="Contraseña"
     />
