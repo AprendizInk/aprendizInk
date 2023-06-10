@@ -20,6 +20,14 @@ import { ChromaticApiComponent } from './chromatic-api/chromatic-api.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    InfoColorsComponent,
+    ChromaticApiComponent,
+    ChromaticCircleUiComponent,
+    ChromaticForTattoosComponent,
+    ChromaticStoryComponent,
+    ChromaticModelsComponent
   ]
 })
 export class ChromaticCircleModule { }
