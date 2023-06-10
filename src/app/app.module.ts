@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UserModule } from './modules/user/user.module';
+import { ChromaticCircleModule } from './modules/chromatic-circle/chromatic-circle.module';
+import { TattooToolsModule } from './modules/tattoo-tools/tattoo-tools.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserModule,
+    ChromaticCircleModule,
+    TattooToolsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
