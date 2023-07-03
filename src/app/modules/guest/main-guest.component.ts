@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['../../../assets/sass/modules/guest/main-guest.component.scss']
 })
 export class MainGuestComponent {
-
+  register: boolean = true;
 }

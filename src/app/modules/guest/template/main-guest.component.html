@@ -1,1 +1,28 @@
-<p>main-guest works!</p>
+<div class="container-fluid guest-page">
+  <div class="row">
+    <div class="col-4">
+      <div class="form-container">
+        <img
+          src="assets/img/logo-aprendizInk.png"
+          alt="Logo Aprendiz Ink"
+          class="guest_brand-logo"
+        />
+        <h2 class="form-container_text">
+            Aprendiz INK está creado para dominar el arte del tatuaje
+        </h2>
+        <div class="container">
+            <div *ngIf="register"; else login>
+                
+            </div>
+            <ng-template #login>
+                
+            </ng-template>
+        </div>
+        <span class="form-container_separator">o</span>
+      </div>
+    </div>
+    <div class="col-8">
+        <img src="assets/img/aprendizimagen.jpg" alt="" class="guest-page_image">
+    </div>
+  </div>
+</div>
