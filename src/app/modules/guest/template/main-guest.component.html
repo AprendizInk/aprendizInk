@@ -11,14 +11,32 @@
             Aprendiz INK está creado para dominar el arte del tatuaje
         </h2>
         <div class="container">
-            <div *ngIf="register"; else login>
-                
-            </div>
-            <ng-template #login>
-                
-            </ng-template>
+          <div *ngIf="register; else login">
+            <app-register-form></app-register-form>
+          </div>
+          <ng-template #login>
+            <app-login-form></app-login-form>
+          </ng-template>
         </div>
         <span class="form-container_separator">o</span>
+        <div *ngIf="register; else loginbutton">
+          <div class="form-change_button-container">
+            <span class="form_link_text">
+              ¿Ya tienes una cuenta?
+            </span>
+            <button class="form_link login_link" (click)="showLoginForm()">
+              <span>Iniciar sesión</span>
+            </button>
+          </div>
+        </div>
+        <ng-template #loginbutton>
+          <span class="form_link_text">
+            ¿No tienes una cuenta?
+          </span>
+          <button class="form_link register_link" (click)="showRegisterForm()">
+            <span>Crear cuenta nueva</span>
+          </button>
+        </ng-template>
       </div>
     </div>
     <div class="col-8">

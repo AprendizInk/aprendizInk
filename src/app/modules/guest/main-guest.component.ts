@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['../../../assets/sass/modules/guest/main-guest.component.scss']
 })
 export class MainGuestComponent {
-  register: boolean = true;
+  public register: boolean = false;
+
+  showLoginForm(): void {
+    this.register = false;
+  }
+
+  showRegisterForm(): void {
+    this.register = true;
+  }
 }
