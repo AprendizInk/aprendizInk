@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChromaticCircleModule } from './modules/chromatic-circle/chromatic-circle.module';
-import { TattooToolsModule } from './modules/tattoo-tools/tattoo-tools.module';
+import { GuestModule } from './modules/guest/guest.module';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +13,9 @@ import { TattooToolsModule } from './modules/tattoo-tools/tattoo-tools.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChromaticCircleModule,
-    TattooToolsModule
+    GuestModule,
+    HomeModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
