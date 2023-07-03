@@ -1,0 +1,113 @@
+@import "../../variables";
+@import "../../helpers";
+
+.guest-page {
+  background-color: $background;
+  height: 100%;
+  padding: calculateRem(50px) calculateRem(60px);
+}
+
+.guest_brand-logo {
+  width: 60%;
+  height: calculateRem(150px);
+}
+
+.form-container {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calculateRem(11px) calculateRem(50px);
+  border: 2px solid $border-white;
+  border-radius: 24px;
+}
+
+.form-container_text {
+  font-size: $f-size-md-xl;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: $text-white;
+}
+
+.form-container_separator {
+  display: block;
+  width: 100%;
+  margin-top: calculateRem(6px);
+  color: $text-gray-3;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 34%;
+    border-bottom: 1px solid $border-gray-3;
+    margin-right: calculateRem(40px);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 34%;
+    border-bottom: 1px solid $border-gray-3;
+    margin-left: calculateRem(40px);
+  }
+}
+
+.guest-page_image {
+  width: 70%;
+  height: 70vh;
+  margin: calculateRem(40px) calculateRem(130px);
+}
+
+.form-change_button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_link_text {
+  font-size: $f-size-sm;
+  font-style: italic;
+  color: $text-gray-3;
+  margin-top: calculateRem(10px);
+}
+
+.form_link {
+  width: 60%;
+  margin: calculateRem(12px) auto;
+  padding: calculateRem(4px);
+  box-sizing: border-box;
+  color: $text-black;
+  font-family: "B612", Arial, Helvetica, sans-serif;
+  font-size: $f-size-xs;
+  font-style: italic;
+  background-color: $background-gray-3;
+  border: 2px solid $border-gray-4;
+  border-radius: 24px;
+
+  span {
+    position: relative;
+    margin-left: calculateRem(-18px);
+  }
+}
+
+.register_link {
+  span {
+    &::after {
+      content: url("../../../img/signing.png");
+      position: absolute;
+    }
+  }
+}
+
+.login_link {
+    width: 90%;
+    span {
+        &::after {
+            content: url("../../../img/login.png");
+            position: absolute;
+        }
+    }
+}

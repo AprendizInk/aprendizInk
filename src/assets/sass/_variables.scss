@@ -2,12 +2,14 @@
 
 //Backgrounds
 $background: $dark-blue; 
-$background-gray: $gray-3;
+$background-gray-1: $gray-1;
+$background-gray-3: $gray-3;
 
 //Text
 $text-white: $white;
 $text-black: $black;
 $text-gray: $gray-2;
+$text-gray-3: $gray-3;
 
 //Border colors
 $border-white: $white;
@@ -15,3 +17,26 @@ $border-gray-1: $gray-1;
 $border-gray-2: $gray-2;
 $border-gray-3: $gray-3;
 $border-gray-4: $gray-4;
+
+//Borders
+$border-white-rounded: 2px solid $border-white;
+$border-gray-rounded: 2px solid $border-gray-2;
+$border-dark-rounded: 2px solid $border-gray-4;
+
+//Border radius
+$rounded: 24px;
+
+//Typography
+$f-size-xxs: 11px;
+$f-size-xs: 12px;
+$f-size-sm: 14px;
+$f-size: 16px;
+$f-size-md: 18px;
+$f-size-md-xl: 20px;
+$f-size-md-xxl: 24px;
+$f-size-lg: 28px;
+$f-size-xlg: 34px;
+$f-size-xlgx: 40px;
+$f-size-xxlg: 48px;
+$f-size-super: 60px;
+$-size-ultra: 74px;

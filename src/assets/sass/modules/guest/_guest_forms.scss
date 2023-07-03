@@ -1,0 +1,50 @@
+@import '../../variables';
+@import'../../helpers';
+
+.form-group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0;
+
+    form {
+        text-align: center;
+    }
+}
+
+.form-control {
+    width: 80%;
+    margin: calculateRem(12px) auto;
+    padding: calculateRem(2px) calculateRem(10px);
+    outline: none;
+    background-color: $background-gray-1;
+    border: $border-gray-rounded;
+    border-radius: $rounded;
+    font-size: $f-size-sm;
+    color: $text-gray-3;
+    text-align: center;
+}
+
+.form-submit {
+    width: 60%;
+    margin: calculateRem(12px) auto;
+    padding: calculateRem(4px);
+    box-sizing: border-box;
+    color: $text-black;
+    font-family: "B612", Arial, Helvetica, sans-serif;
+    font-size: $f-size;
+    font-style: italic;
+    background-color: $background-gray-3;
+    border: $border-dark-rounded;
+    border-radius: $rounded;
+}
+
+.remember-password {
+    display: block;
+    color: $text-gray-3;
+    font-size: $f-size-sm;
+    font-style: italic;
+}
